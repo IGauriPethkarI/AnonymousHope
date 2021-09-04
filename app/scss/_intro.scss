@@ -1,0 +1,77 @@
+.intro{
+    background-color: $white;
+    
+    @include breakpoint-up(medium){
+        background-image: linear-gradient( to left, transparent, $white 75% ),
+                      url('/img/desktop-background-top-2.jpg');        
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        @include breakpoint-up(medium){    
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__text{
+        text-align: center;
+
+        @include breakpoint-up(medium){
+            flex: 2;
+            order: 1;
+            text-align: left;
+        }
+
+    }
+
+    &__wrapper{
+        margin-bottom: 2.25rem;
+        display: grid ;
+        float: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        &__inline_divs{
+            h2{
+                font-weight: 500;
+                font-size: $font-lg;
+                margin-bottom: 0.667rem;
+            }
+
+            span{
+                font-weight: 500;
+                font-size: $font-med;                
+            }
+        }
+
+        &__inline_divs:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+
+    &__image{
+        position: relative;
+        background-image: linear-gradient( to bottom, transparent, $white 95% ),
+                          url('/img/mobile-background-top.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        min-height: 22.5rem;
+
+        @include breakpoint-up(small){
+            min-height: 25rem;
+            background-position: center 70%;
+        }
+      
+        @include breakpoint-up(medium){
+            flex: 3;
+            order: 2;
+            height: 20rem;
+            background-image: none;
+        }
+    }
+    
+}

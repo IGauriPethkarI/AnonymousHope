@@ -45,6 +45,11 @@
         span{
             vertical-align: middle;
         }
+
+        span:hover,
+        span:focus{
+            color: $grayishBlue;
+        }
         
     }
 

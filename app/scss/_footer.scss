@@ -25,14 +25,19 @@
     &__logo{
         font-weight: 400;
         font-size: $font-lg;
+        display: inline-block;
+        border-bottom: 1px solid $grayishBlue;
         
         img,
         span{
             vertical-align: middle;
         }
-        display: inline-block;
-        border-bottom: 1px solid $grayishBlue;
 
+        span:hover,
+        span:focus{
+            color: $grayishBlue;
+        }
+        
         @include breakpoint-down(small){
             margin-bottom: 1.875rem;
         }
@@ -44,6 +49,7 @@
     }
 
     &__social{
+        
         @include breakpoint-down(small){
             margin-bottom: 1.875rem;
         }

@@ -1,0 +1,172 @@
+.feature{
+    width: 86%;
+    max-width: 1114px;
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    @include breakpoint-up(medium){
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    &__img {
+        width:100%;
+        max-width: 731px;
+        display: block;
+        margin-bottom: 3rem;
+
+        @include breakpoint-up(medium){
+            width: 80%;
+        }
+    }
+
+    &__content {
+        width: 90%;
+        max-width: 640px;
+        background-color: $white;
+
+        
+        @include breakpoint-up(medium) {
+            padding: 6rem;
+            position: absolute;
+            right: -100px;
+            top: 280px;
+        }
+
+        &-subtitle {
+            margin-top: 0;
+            margin-bottom: 13.5px;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 1.1;
+
+            @include breakpoint-up(medium) {
+                font-size: 3rem;
+                text-align: left;
+            }
+        }
+
+        &-paragraph {
+            margin-top: 0;
+            text-align: center;
+            line-height: 1.7;
+
+            @include breakpoint-up(medium) {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.slide{
+
+    &__main {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__button {
+        all: revert;
+        border: none;
+        cursor: pointer;
+        background: none;
+        margin: 0.3rem;
+        padding: 0.5rem;
+        transition: background-color 150ms ease-in-out;
+    }
+    
+    &__arrow {
+        width: 2rem;
+        height: 2rem;
+        color: #333;
+    }
+
+    .prev{
+        border-radius: 3px 0 0 3px;
+        
+        &:hover,
+        &:focus {
+           background: $grayishBlue;
+        }
+
+        @include breakpoint-up(medium){
+            margin-left: -2.4375rem;
+            margin-bottom: 4rem;
+        }
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 0 3px 3px 0;
+        
+        &:hover,
+        &:focus {
+           background: $grayishBlue;
+        }
+        @include breakpoint-up(medium){
+            margin-right: -2.4375rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__item{
+        display: none;
+    }
+
+    &__dot {
+        text-align:center;
+    
+        @include breakpoint-up(medium){
+            margin-right: 20rem;
+        }
+        
+        &__items{
+            cursor: pointer;
+            height: 1rem;
+            width: 1rem;
+            margin-top: 1.5rem;
+            background-color: hsl(0, 0%, 36%);
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 150ms ease-in-out;
+        
+            @include breakpoint-up(medium) {
+                margin-top: 2rem;
+            }
+        
+            &:focus, 
+            &:hover{
+                background-color: #b5b5b5;
+            }
+        }
+    
+        &__items:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+
+    .active{
+        background-color: #b5b5b5;
+    }
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

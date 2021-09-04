@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/styles.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
      
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/title-img.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/title-img.png">
     <title>Donations</title>
 </head>
 
@@ -32,8 +32,8 @@
             </a>
 
             <div class="header__links hide-for-mobile">
-                <a href="#" class="active">Home</a>
-                <a href="#">Donate</a>
+                <a href="./index.html" class="active">Home</a>
+                <a href="./donate.html">Donate</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </div>
@@ -50,7 +50,103 @@
         </div>
 
     </header>
-    <h1>Hello</h1>
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro__image"></div>
+            
+            <div class="intro__text container--pall">
+                <h1>
+                    Simplest Way to Raise Funds
+                </h1>
+                <div class="intro__wrapper">
+                    <div class="intro__wrapper__inline_divs">
+                        <h2>0%</h2>
+                        <span>PLATFORM FEE</span>
+                    </div>
+                    <div class="intro__wrapper__inline_divs">
+                        <h2>6Lakh+</h2>
+                        <span>DONORS</span>
+                    </div>
+                    <div class="intro__wrapper__inline_divs">
+                        <h2>100%</h2>
+                        <span>SAFE & SECURE</span>
+                    </div>
+                </div>
+                
+                <a href="#" class="button intro__cta">Start a Fundraiser</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="feature flex flex-ai-c flex-jc-c">
+        <div class="container container--px container--pb">
+            <div class="slide">
+                <div class="slide__main">
+                    <button class="slide__button prev" type="button" onclick="plusSlides(-1)" aria-label="Go to previous photo" id="prevButton">
+                        <svg class="slide__arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+
+                    <div slide__items>
+                        <div class="slide__item">
+                            <img class="feature__img" src="/img/image-interactive.jpg" alt ="feature article image">
+                            <div class="feature__content">
+                                <h2 class="feature__content-subtitle">The leader in interactive VR</h2>
+                                
+                                <p class="feature__content-paragraph">
+                                    Founded in 2011, Loopstudios has been producing world-class virtual reality 
+                                    projects for some of the best companies around the globe. Our award-winning 
+                                    creations have transformed businesses through digital experiences that bind 
+                                    to their brand.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="slide__item">
+                            <img class="feature__img" src="/img/image-interactive.jpg" alt ="feature article image">
+                            <div class="feature__content">
+                                <h2 class="feature__content-subtitle">The leader in interactive VR</h2>
+                                
+                                <p class="feature__content-paragraph">
+                                    Founded in 2011, Loopstudios has been producing world-class virtual reality 
+                                    projects for some of the best companies around the globe. Our award-winning 
+                                    creations have transformed businesses through digital experiences that bind 
+                                    to their brand.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="slide__item">
+                            <img class="feature__img" src="/img/image-interactive.jpg" alt ="feature article image">
+                            <div class="feature__content">
+                                <h2 class="feature__content-subtitle">The leader in interactive VR</h2>
+                                
+                                <p class="feature__content-paragraph">
+                                    Founded in 2011, Loopstudios has been producing world-class virtual reality 
+                                    projects for some of the best companies around the globe. Our award-winning 
+                                    creations have transformed businesses through digital experiences that bind 
+                                    to their brand.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="slide__button next" type="button" onclick="plusSlides(1)" aria-label="Go to next photo" id="nextButton">
+                        <svg class="slide__arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>                
+                <div class="slide__dot">
+                    <span class="slide__dot__items" onclick="currentSlide(1)"></span>
+                    <span class="slide__dot__items" onclick="currentSlide(2)"></span>
+                    <span class="slide__dot__items" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
