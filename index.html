@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+     
     <link rel="icon" type="image/png" sizes="32x32" href="./img/title-img.jpg">
     <title>Donations</title>
 </head>
@@ -16,7 +21,7 @@
         <div class="overlay has-fade"></div>
         <nav class="container container--pall flex flex-jc-sb flex-ai-c">
             <a href="/" class="header__logo">
-                <img src="img/title-img.jpg" height="35" width="35" alt="Donations" />
+                <img src="img/title-img.png" height="35" width="35" alt="Donations" />
                 <span>Anonymous Hope</span>   
             </a>
 
@@ -27,7 +32,7 @@
             </a>
 
             <div class="header__links hide-for-mobile">
-                <a href="#">Home</a>
+                <a href="#" class="active">Home</a>
                 <a href="#">Donate</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
@@ -46,6 +51,65 @@
 
     </header>
     <h1>Hello</h1>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="/" class="footer__logo">
+                <img src="img/title-img.png" height="35" width="35" alt="Donations" />
+                <span>Anonymous Hope</span>   
+            </a>
+
+            <div class="footer__social">
+                <a href="/">
+                    <img src="./img/icon-facebook.svg" alt="facbook">
+                </a>
+                <a href="/">
+                    <img src="./img/icon-LinkedIn.svg" alt="linkedin">
+                </a>
+                <a href="/">
+                    <img src="./img/icon-twitter.svg" alt="twitter">
+                </a>
+                <a href="/">
+                    <img src="./img/icon-instagram.svg" alt="instagram">
+                </a>
+                <a href="/">
+                    <img src="./img/icon-whatsapp.svg" alt="whatsapp">
+                </a>
+                <a href="/">
+                    <img src="./img/icon-github.svg" alt="github">
+                </a>
+            </div>
+
+            <div class="footer__links col1">
+                <a href="http://">About us</a>
+                <a href="http://">Contact us</a>
+                <a href="http://">FAQs and Help</a>
+            </div>
+
+            <div class="footer__links col2">
+                <a href="http://">Terms & Conditions</a>
+                <a href="http://">Privacy Policy</a>
+                <a href="http://">Use of Cookies</a>
+            </div>
+
+            <div class="footer__cta">
+                <div class="footer__queries">
+                    <br>For any Queries <br> 
+                    <i class="fa fa-phone fa-lg"></i> : <a href="tel:+91 1234567890">+91 1234567890</a><br>
+                    <i class="fa fa-envelope fa-lg"></i> : <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+                </div>
+                <div class="footer__copyright"> <br>
+                    &copy; 2021 Anonymous Hope. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="app/js/script.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

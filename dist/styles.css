@@ -1,75 +1,3 @@
-.has-fade {
-  visibility: hidden;
-}
-
-@-webkit-keyframes fade-in {
-  from {
-    visibility: hidden;
-    opacity: 0;
-  }
-  1% {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    visibility: hidden;
-    opacity: 0;
-  }
-  1% {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-.fade-in {
-  -webkit-animation: fade-in 200ms ease-in-out forwards;
-          animation: fade-in 200ms ease-in-out forwards;
-}
-
-@-webkit-keyframes fade-out {
-  from {
-    visibility: visible;
-    opacity: 1;
-  }
-  99% {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    visibility: visible;
-    opacity: 1;
-  }
-  99% {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-.fade-out {
-  -webkit-animation: fade-out 200ms ease-in-out forwards;
-          animation: fade-out 200ms ease-in-out forwards;
-}
-
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -97,6 +25,10 @@ a:hover {
   text-decoration: none;
 }
 
+:focus {
+  outline: none;
+}
+
 .flex {
   display: flex;
 }
@@ -114,7 +46,7 @@ button, .button {
   position: relative;
   display: inline-block;
   padding: 0.875rem 2.1875rem;
-  background-image: linear-gradient(to right, #4ac25e, #00d4ff);
+  background-image: linear-gradient(to right, #6231d3, #2cd4f2);
   border: 0;
   border-radius: 50px;
   cursor: pointer;
@@ -135,8 +67,8 @@ button::before, .button::before {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
-button:hover::before, button:hover:focus, .button:hover::before, .button:hover:focus {
-  opacity: 1;
+button:hover::before, button:focus::before, .button:hover::before, .button:focus::before {
+  opacity: 1.25;
 }
 
 @media (max-width: 44.9375em) {
@@ -230,13 +162,215 @@ button:hover::before, button:hover:focus, .button:hover::before, .button:hover:f
   left: 0;
   right: 0;
   bottom: -30px;
-  background: linear-gradient(to right, #4ac25e, #00d4ff);
+  background: linear-gradient(to right, #6231d3, #2cd4f2);
   opacity: 0;
   transition: opacity 300ms ease-in-out;
 }
-.header__links a:hover {
+.header__links a:hover, .header__links a:focus {
   color: #2d314d;
 }
-.header__links a:hover::before {
+.header__links a:hover::before, .header__links a:focus::before {
   opacity: 1;
+}
+
+.has-fade {
+  visibility: hidden;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.fade-in {
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-out {
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
+}
+
+.footer {
+  background-color: #2d314d;
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+}
+@media (min-width: 45em) {
+  .footer .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    gap: 1rem;
+    justify-items: start;
+  }
+}
+.footer a {
+  color: white;
+}
+.footer__logo {
+  font-weight: 400;
+  font-size: 1.25rem;
+  display: inline-block;
+  border-bottom: 1px solid #9698a6;
+}
+.footer__logo img,
+.footer__logo span {
+  vertical-align: middle;
+}
+@media (max-width: 44.9375em) {
+  .footer__logo {
+    margin-bottom: 1.875rem;
+  }
+}
+@media (min-width: 45em) {
+  .footer__logo {
+    grid-area: logo;
+  }
+}
+@media (max-width: 44.9375em) {
+  .footer__social {
+    margin-bottom: 1.875rem;
+  }
+}
+@media (min-width: 45em) {
+  .footer__social {
+    grid-area: social;
+    align-self: end;
+  }
+}
+.footer__social a {
+  display: inline-block;
+  height: 1.25rem;
+}
+.footer__social a svg path {
+  transition: fill 150ms ease-in-out;
+}
+.footer__social a:hover svg path, .footer__social a:focus svg path {
+  fill: #9698a6;
+}
+.footer__social a:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9375rem;
+}
+@media (min-width: 45em) {
+  .footer__links {
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+@media (min-width: 45em) {
+  .footer__links.col1 {
+    grid-area: links1;
+  }
+}
+@media (max-width: 44.9375em) {
+  .footer__links.col2 {
+    margin-bottom: 1.875rem;
+  }
+}
+@media (min-width: 45em) {
+  .footer__links.col2 {
+    grid-area: links2;
+  }
+}
+.footer__links a {
+  line-height: 2.25;
+  transition: color 150ms ease-in-out;
+}
+.footer__links a:hover, .footer__links a:focus {
+  color: #9698a6;
+}
+.footer__cta {
+  line-height: 1.75;
+}
+@media (min-width: 45em) {
+  .footer__cta {
+    grid-area: cta;
+    text-align: right;
+    justify-self: end;
+  }
+}
+.footer__queries a {
+  transition: color 150ms ease-in-out;
+}
+.footer__queries a:hover, .footer__queries a:focus {
+  color: #9698a6;
+}
+@media (max-width: 44.9375em) {
+  .footer__queries {
+    margin-bottom: 1.875rem;
+  }
+}
+.footer__copyright {
+  font-size: 0.8125rem;
+  color: #9698a6;
+}
+@media (min-width: 45em) {
+  .footer__copyright {
+    grid-area: copyright;
+    align-self: end;
+    justify-self: end;
+  }
 }/*# sourceMappingURL=styles.css.map */

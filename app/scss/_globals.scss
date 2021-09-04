@@ -25,6 +25,10 @@ a:hover{
     text-decoration: none;
 }
 
+:focus{
+    outline: none;
+}
+
 //flexbox
 .flex {
     display: flex;
@@ -70,8 +74,8 @@ button, .button {
     }
   
     &:hover::before,
-    &:hover:focus {
-      opacity: 1;
+    &:focus::before{
+      opacity: 1.25;
     }
   
   }
@@ -86,7 +90,7 @@ button, .button {
 .hide-for-desktop {
     @include breakpoint-up(medium){
       display: none;
-      
+
     }
 }
   
