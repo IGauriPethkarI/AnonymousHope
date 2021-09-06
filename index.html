@@ -74,23 +74,26 @@
                     </div>
                 </div>
                 
-                <a href="#" class="button intro__cta">Start a Fundraiser</a>
+                <a href="#startFundraiser" class="button intro__cta">Start a Fundraiser</a>
             </div>
         </div>
     </section>
-    
+
     <section class="feature flex flex-ai-c flex-jc-c">
         <div class="container container--px container--pb">
+            <h2>Featured Articles</h2>
             <div class="slide">
                 <div class="slide__main">
-                    <button class="slide__button prev" type="button" onclick="plusSlides(-1)" aria-label="Go to previous photo" id="prevButton">
+                    <!--Prev Button-->
+                    <button class="slide__button prev" type="button" onclick="plusSlides(-1)">
                         <svg class="slide__arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
                     </button>
 
                     <div slide__items>
-                        <div class="slide__item">
+                        <!--Slide 1-->
+                        <div class="slide__item" style="">
                             <img class="feature__img" src="/img/image-interactive.jpg" alt ="feature article image">
                             <div class="feature__content">
                                 <h2 class="feature__content-subtitle">The leader in interactive VR</h2>
@@ -99,12 +102,31 @@
                                     Founded in 2011, Loopstudios has been producing world-class virtual reality 
                                     projects for some of the best companies around the globe. Our award-winning 
                                     creations have transformed businesses through digital experiences that bind 
-                                    to their brand.
+                                    to their brand.<br><br>
+                                    <a href="#" class="button button-2 readmore">Read More... <i class="fa fa-external-link fa-lg"></i></a>
+                                </p>
+                                
+                            </div>
+                        </div>
+
+                        <!--Slide 2-->
+                        <div class="slide__item" style="">
+                            <img class="feature__img" src="/img/image-interactive.jpg" alt ="feature article image">
+                            <div class="feature__content">
+                                <h2 class="feature__content-subtitle">The leader in interactive VR</h2>
+                                
+                                <p class="feature__content-paragraph">
+                                    Founded in 2011, Loopstudios has been producing world-class virtual reality 
+                                    projects for some of the best companies around the globe. Our award-winning 
+                                    creations have transformed businesses through digital experiences that bind 
+                                    to their brand.<br><br>
+                                    <a href="#" class="button button-2 readmore">Read More... <i class="fa fa-external-link fa-lg"></i></a>
                                 </p>
                             </div>
                         </div>
 
-                        <div class="slide__item">
+                        <!--Slide 3-->
+                        <div class="slide__item" style="">
                             <img class="feature__img" src="/img/image-interactive.jpg" alt ="feature article image">
                             <div class="feature__content">
                                 <h2 class="feature__content-subtitle">The leader in interactive VR</h2>
@@ -113,36 +135,158 @@
                                     Founded in 2011, Loopstudios has been producing world-class virtual reality 
                                     projects for some of the best companies around the globe. Our award-winning 
                                     creations have transformed businesses through digital experiences that bind 
-                                    to their brand.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="slide__item">
-                            <img class="feature__img" src="/img/image-interactive.jpg" alt ="feature article image">
-                            <div class="feature__content">
-                                <h2 class="feature__content-subtitle">The leader in interactive VR</h2>
-                                
-                                <p class="feature__content-paragraph">
-                                    Founded in 2011, Loopstudios has been producing world-class virtual reality 
-                                    projects for some of the best companies around the globe. Our award-winning 
-                                    creations have transformed businesses through digital experiences that bind 
-                                    to their brand.
+                                    to their brand.<br><br>
+                                    <a href="#" class="button button-2 readmore">Read More... <i class="fa fa-external-link fa-lg"></i></a>
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <button class="slide__button next" type="button" onclick="plusSlides(1)" aria-label="Go to next photo" id="nextButton">
+                    <!--Next Button-->
+                    <button class="slide__button next" type="button" onclick="plusSlides(1)">
                         <svg class="slide__arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </button>
-                </div>                
+                </div>         
+                <!--dot controls-->       
                 <div class="slide__dot">
                     <span class="slide__dot__items" onclick="currentSlide(1)"></span>
                     <span class="slide__dot__items" onclick="currentSlide(2)"></span>
                     <span class="slide__dot__items" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fundraiser" id="startFundraiser">
+        <div class="fundraiser__content container container--pall">
+            <div class="fundraiser__top">
+                <h2>Start a Fundraiser in 3 Simple Steps</h2>
+            </div>
+
+            <div class="fundraiser__grid">
+
+                <!--Item 1-->
+                <div class="fundraiser__item">
+                    <div class="fundraiser__icons">
+                        <span class="fundraiser__icons__icon">
+                            <img src="img/money-bag-32.png" alt="money fundraiser"/>
+                        </span>
+                    </div>
+                    <div class="fundraiser__title">
+                        Online Banking
+                    </div>
+                    <div class="fundraiser__description">
+                        Our modern web and mobile applications allow you to keep track of your finances 
+                        wherever you are in the world.
+                    </div>
+                </div>
+
+                <!--Item 2-->
+                <div class="fundraiser__item">
+                    <div class="fundraiser__icons">
+                        <span class="fundraiser__icons__icon">
+                            <img src="img/money-bag-32.png" alt="money fundraiser"/>
+                        </span>
+                    </div>
+                    <div class="fundraiser__title">
+                        Online Banking
+                    </div>
+                    <div class="fundraiser__description">
+                        Our modern web and mobile applications allow you to keep track of your finances 
+                        wherever you are in the world.
+                    </div>
+                </div>
+
+                <!--Item 3-->
+                <div class="fundraiser__item">
+                    <div class="fundraiser__icons">
+                        <span class="fundraiser__icons__icon">
+                            <img src="img/money-bag-32.png" alt="money fundraiser"/>
+                        </span>
+                    </div>
+                    <div class="fundraiser__title">
+                        Online Banking
+                    </div>
+                    <div class="fundraiser__description">
+                        Our modern web and mobile applications allow you to keep track of your finances 
+                        wherever you are in the world.
+                    </div>
+                </div>
+
+                <!--Item 4-->
+                <div class="fundraiser__item item-buttons">
+                    <a href="#" class="button">Start Fundraiser Now</a>
+                    <br>
+                    <a href="#" class="button button-2">Talk with us</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="whyus">
+        <div class="whyus__content container container--pall">
+            <div class="why__top">
+                <h2>Why Choose Anonymous Hope?</h2>
+            </div>
+
+            <div class="whyus__grid">
+                <!--item 1-->
+                <div class="whyus__item">
+                    <img class="whyus__img" src="/img/best-seller.png" alt="best in Service" />
+                    <div class="whyus__border"></div>
+                    <p>Among the Industry’s Top Fundraising Success Rates</p>
+                </div>
+
+                <!--item 2-->
+                <div class="whyus__item">
+                    <img class="whyus__img" src="/img/people.png" alt="best in Service" />
+                    <div class="whyus__border"></div>
+                    <p>Supported by 6Lakh+ Donors</p>
+                </div>
+
+                <!--item 3-->
+                <div class="whyus__item">
+                    <img class="whyus__img" src="/img/wallet.png" alt="best in Service" />
+                    <div class="whyus__border"></div>
+                    <p>Donations via all Popular Payment Modes</p>
+                </div>
+
+                <!--item 4-->
+                <div class="whyus__item">
+                    <img class="whyus__img" src="/img/tools.png" alt="best in Service" />
+                    <div class="whyus__border"></div>
+                    <p>Easy to Manage Tools and Methods</p>
+                </div>
+
+                <!--item 5-->
+                <div class="whyus__item">
+                    <img class="whyus__img" src="/img/customer-service.png" alt="best in Service" />
+                    <div class="whyus__border"></div>
+                    <p>24/7 Expert Support Available</p>
+                </div>
+
+                <!--item 6-->
+                <div class="whyus__item">
+                    <img class="whyus__img" src="/img/social-care.png" alt="best in Service" />
+                    <div class="whyus__border"></div>
+                    <p>Helped over 50Lakh people</p>
+                </div>
+
+                <!--item 7-->
+                <div class="whyus__item">
+                    <img class="whyus__img" src="/img/shield.png" alt="best in Service" />
+                    <div class="whyus__border"></div>
+                    <p>Safe and Secure way of Payment</p>
+                </div>
+                
+                <!--item 8-->
+                <div class="whyus__item">
+                    <img class="whyus__img" src="/img/currency.png" alt="best in Service" />
+                    <div class="whyus__border"></div>
+                    <p>International Payment Options Available</p>
                 </div>
             </div>
         </div>

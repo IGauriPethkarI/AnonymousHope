@@ -170,7 +170,19 @@ button, .button {
       opacity: 1.25;
     }
   
-  }
+}
+
+.button-2{
+    background-image: none;
+    color: $grayishBlue;
+    border: 1px solid $grayishBlue;
+
+    &:hover::before,
+    &:focus::before{
+        background-color: hsla(0, 1%, 56%, 0.25);
+        border-radius: 50px;
+    }    
+}
 
 // Visibility
 .hide-for-mobile {
@@ -185,4 +197,3 @@ button, .button {
 
     }
 }
-  

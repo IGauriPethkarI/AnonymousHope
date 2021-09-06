@@ -1,9 +1,17 @@
-@import "variables";
+//abstracts
 @import "mixins";
+@import "animations";
 
+//global
+@import "variables";
 @import "globals";
 @import "header";
-@import "animations";
-@import "footer";
+
+//layout
 @import "intro";
 @import "feature";
+@import "fundraiser";
+@import "footer";
+@import "trending";
+@import "whyus";
+@import "form";
