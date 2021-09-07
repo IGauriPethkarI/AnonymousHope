@@ -7,7 +7,7 @@
     margin-right: auto;
     position: relative;
 
-    h2{
+    &__h2{
         margin-bottom: 3.75rem;
         text-align: center;
         @include breakpoint-up(medium){

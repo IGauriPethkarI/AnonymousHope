@@ -467,12 +467,12 @@ button:hover::before, button:focus::before, .button:hover::before, .button:focus
   margin-right: auto;
   position: relative;
 }
-.feature h2 {
+.feature__h2 {
   margin-bottom: 3.75rem;
   text-align: center;
 }
 @media (min-width: 45em) {
-  .feature h2 {
+  .feature__h2 {
     text-align: left;
     margin-left: -6.5rem;
   }
@@ -937,6 +937,18 @@ button:hover::before, button:focus::before, .button:hover::before, .button:focus
 .whyus {
   text-align: center;
 }
+@media (min-width: 45em) {
+  .whyus {
+    width: 75%;
+    margin-left: 5rem;
+  }
+}
+@media (min-width: 64em) {
+  .whyus {
+    width: 75%;
+    margin-left: 8rem;
+  }
+}
 .whyus__top {
   margin-bottom: 3.75rem;
 }
@@ -971,8 +983,8 @@ button:hover::before, button:focus::before, .button:hover::before, .button:focus
 }
 .whyus__img {
   margin-bottom: 1.875rem;
-  height: 100px;
-  width: 100px;
+  height: 5.625rem;
+  width: 5rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1017,18 +1029,155 @@ button:hover::before, button:focus::before, .button:hover::before, .button:focus
   transition: all 150ms ease-in-out;
 }
 
-.form {
-  background-color: #f3f4f6;
-  padding-top: 0px;
-  text-align: center;
+.main {
+  padding: 0 1.5rem 5rem;
+  margin-top: -3.75rem;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  grid-gap: 1.5rem;
 }
-.form__wrapper {
-  position: absolute;
-  width: 83%;
-  border-radius: 0.3125rem;
-  overflow: hidden;
+@media (min-width: 64em) {
+  .main {
+    margin-top: -6rem;
+  }
+}
+
+.section {
   background-color: white;
-  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
-  margin-top: -3rem;
-  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #9698a6;
+  padding: 2rem 1.4375rem 2.4375rem;
+  width: 100%;
+  max-width: 45.625rem;
+}
+@media (min-width: 45em) {
+  .section {
+    padding: 3rem;
+  }
+}
+
+.donatetop {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  grid-gap: 1.5rem;
+  position: relative;
+}
+@media (min-width: 45em) {
+  .donatetop {
+    grid-gap: 2.1875rem;
+  }
+}
+.donatetop__img {
+  position: absolute;
+  top: -1.75rem;
+  background: #c9cbd4;
+  border-radius: 50px;
+  padding: 0.2rem;
+}
+.donatetop__text {
+  display: grid;
+  grid-gap: 1rem;
+  padding-top: 1.25rem;
+}
+@media (min-width: 45em) {
+  .donatetop__text {
+    grid-gap: 0.75rem;
+    padding-top: 0.5rem;
+  }
+}
+
+.donateform {
+  display: grid;
+  grid-gap: 2.125rem;
+}
+@media (min-width: 45em) {
+  .donateform {
+    grid-gap: 2.5rem;
+  }
+}
+.donateform h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.form__content {
+  margin-left: 1rem;
+}
+@media (min-width: 45em) {
+  .form__content {
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 64em) {
+  .form__content {
+    margin-left: 5rem;
+  }
+}
+.form__item {
+  padding-bottom: 2rem;
+}
+.form__inputtitle {
+  background-color: #9698a6;
+  color: white;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 50px;
+  margin-bottom: -0.2rem;
+  margin-left: -0.2rem;
+}
+.form__itemlast {
+  position: relative;
+  margin-top: 1rem;
+}
+.form__buttons {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+[type=text],
+[type=email],
+[type=url],
+select,
+textarea {
+  display: block;
+  padding: 0.5rem;
+  background: transparent;
+  width: 75%;
+  max-width: 100%;
+  border: 1px solid #9698a6;
+  color: #8a8888;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+[type=text]:focus, [type=text]:hover,
+[type=email]:focus,
+[type=email]:hover,
+[type=url]:focus,
+[type=url]:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover {
+  outline: none;
+}
+
+input[type=radio] {
+  border: 1px solid #9698a6;
+  border-radius: 2px;
+  padding: 0.5em;
+  margin-top: 1.2rem;
+  -webkit-appearance: none;
+}
+input[type=radio]:checked {
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==) no-repeat center center;
+  background-size: 9px 9px;
+}
+input[type=radio]:focus, input[type=radio]:hover, input[type=radio]:not(:checked) {
+  background: #f3f4f6;
 }/*# sourceMappingURL=styles.css.map */
