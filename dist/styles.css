@@ -351,6 +351,12 @@ button:hover::before, button:focus::before, .button:hover::before, .button:focus
   font-weight: 600;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .intro {
   background-color: white;
 }
@@ -695,15 +701,17 @@ button:hover::before, button:focus::before, .button:hover::before, .button:focus
 }
 .fundraiser__icons__icon {
   background-image: linear-gradient(to right, #6231d3, #2cd4f2);
-  height: 80px;
-  width: 80px;
-  padding: 20px;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
   border-radius: 50%;
   -moz-border-radius: 50%;
   align-items: center;
 }
 .fundraiser__icons__icon img {
-  margin-bottom: -0.55rem;
+  margin-bottom: -1rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 .fundraiser__title {
   font-size: 1.25rem;
@@ -1050,6 +1058,7 @@ button:hover::before, button:focus::before, .button:hover::before, .button:focus
   padding: 2rem 1.4375rem 2.4375rem;
   width: 100%;
   max-width: 45.625rem;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 45em) {
   .section {
@@ -1080,6 +1089,14 @@ button:hover::before, button:focus::before, .button:hover::before, .button:focus
   display: grid;
   grid-gap: 1rem;
   padding-top: 1.25rem;
+}
+.donatetop__text h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+}
+.donatetop__text p {
+  margin: 0;
 }
 @media (min-width: 45em) {
   .donatetop__text {
@@ -1167,17 +1184,26 @@ textarea:hover {
   outline: none;
 }
 
-input[type=radio] {
+.option {
+  background-color: #f3f4f6;
+}
+
+input[type=radio],
+input[type=checkbox] {
   border: 1px solid #9698a6;
   border-radius: 2px;
   padding: 0.5em;
   margin-top: 1.2rem;
   -webkit-appearance: none;
 }
-input[type=radio]:checked {
+input[type=radio]:checked,
+input[type=checkbox]:checked {
   background: url(data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==) no-repeat center center;
   background-size: 9px 9px;
 }
-input[type=radio]:focus, input[type=radio]:hover, input[type=radio]:not(:checked) {
+input[type=radio]:focus, input[type=radio]:hover, input[type=radio]:not(:checked),
+input[type=checkbox]:focus,
+input[type=checkbox]:hover,
+input[type=checkbox]:not(:checked) {
   background: #f3f4f6;
 }/*# sourceMappingURL=styles.css.map */

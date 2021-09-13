@@ -1,3 +1,5 @@
+
+
 const btnHamburger = document.querySelector('#btnHamburger');
 const body = document.querySelector('body');
 const header = document.querySelector('.header');
@@ -31,12 +33,9 @@ btnHamburger.addEventListener('click', function(){
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
-
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }

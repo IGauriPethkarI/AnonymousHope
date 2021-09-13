@@ -64,8 +64,10 @@
             <div class="donatetop__text">
                 <h2>A small donation can make a huge difference.</h2>
                 <h3>About this Project</h3>
-                <p>A beautiful & handcrafted monitor stand to reduce neck and eye
-                    strain.
+                <p>Desires are like water, they always keep on flowing, we desire good food, television, new smart phone, 
+                    clothes and etc, and we get most of it, but you know there are so many of them 
+                    who are not even able to get 2 meals a day. Sharing is caring and caring is Divine. 
+                    We want to help as many people as we can and you can help us to do that.
                 </p>
             </div>
         </section>
@@ -73,73 +75,81 @@
         <section class="donateform section">
             <h2>Fill this Short Form before Funding a Fundraiser</h2>
             <div class="form__content">
-                <div class="form__item">
-                    <label class="form__inputtitle" for="firstname">First Name</label>
-                    <input type="text" id="name" 
-                        placeholder="Enter First Name"
-                        onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Enter First Name'">
-                </div>
-
-                <div class="form__item">
-                    <label class="form__inputtitle" for="lastname">Last Name</label>
-                    <input type="text" id="name" 
-                        placeholder="Enter Last Name"
-                        onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Enter Last Name'">
-                </div>
-
-                <div class="form__item">
-                    <label class="form__inputtitle" for="email">Email Address</label>
-                    <input type="email" id="email" 
-                        placeholder="Enter Email Address"
-                        onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Enter Email Address'">
-                </div>
-
-                <div class="form__item">
-                    <label class="form__inputtitle" for="choosefund">Fundraiser</label>
-                    <select id="choosefund" place>
-                        <option disabled selected value="">Select Fundraiser</option>
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="fiat">Fiat</option>
-                        <option value="audi">Audi</option>
-                    </select>
-                </div>
-                
-                <div class="form__item">
-                    <label class="form__inputtitle" for="nationality">Nationality: </label>
-                    <label class="radio">
-                        <input type="radio" checked="checked" name="radio">
-                        Indian
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio">
-                        NRI
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio">
-                        Foreign National
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-
-                <div class="form__item">
-                    <label class="form__inputtitle" for="message">Message for the People You are Helping</label>
-                    <textarea name="message" rows="10" cols="20">
-                    </textarea>
-                </div>
-                
-                <div class="form__item form__itemlast">
-                    <div class="form__buttons">
-                        <a href="https://rzp.io/l/2zgRCxK" class="button">Donate <i class="fa fa-external-link"></i></a>
-                        
-                        <a href="./index.html" class="button button-2">Back to Home</a>
+                <form>
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="firstname">First Name</label>
+                        <input type="text" id="name"  
+                            placeholder="Enter First Name"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter First Name'" required>
                     </div>
-                </div>
+
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="lastname">Last Name</label>
+                        <input type="text" id="name" 
+                            placeholder="Enter Last Name"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Last Name'" required>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="email">Email Address</label>
+                        <input type="email" id="email" 
+                            placeholder="Enter Email Address"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Email Address'" required>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="choosefund">Fundraiser</label>
+                        <select id="choosefund" place required>
+                            <option disabled selected value="">Select Fundraiser</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="nationality">Nationality: </label>
+                        <label class="radio">
+                            <input type="radio" checked="checked" name="radio">
+                            Indian
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio">
+                            NRI
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio">
+                            Foreign National
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="message">Message for the People You are Helping</label>
+                        <textarea name="message" rows="10" cols="20">
+                        </textarea>
+                    </div>
+                    
+                    <div class="form__item">
+                        <input type="checkbox" id="anon"  value="Anonymous">
+                        <label class="form__inputtitle" for="message" required>Would you like to keep your donation Anonymous</label>
+                    </div>
+                    
+
+                    <div class="form__item form__itemlast">
+                        <div class="form__buttons">
+                            <a href="https://rzp.io/l/2zgRCxK" class="button">Donate <i class="fa fa-external-link"></i></a>
+                            
+                            <a href="./index.html" class="button button-2">Back to Home</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

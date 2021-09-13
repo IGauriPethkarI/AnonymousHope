@@ -5,7 +5,6 @@
     display: grid;
     justify-content: center;
     grid-gap: 1.5rem;
-
     @include breakpoint-up(large) {
         margin-top: -6rem;
     }
@@ -18,7 +17,8 @@
     padding: 2rem 1.4375rem 2.4375rem;
     width: 100%;
     max-width: 45.625rem;
-  
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+        
     @include breakpoint-up(medium) {
         padding: 3rem;
     }
@@ -48,6 +48,15 @@
         grid-gap: 1rem;
         padding-top: 1.25rem;
 
+        h3{
+            font-size: $font-med;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        p{
+            margin: 0;
+        }
         @include breakpoint-up(medium){
             grid-gap: 0.75rem;
             padding-top: 0.5rem;
@@ -134,8 +143,12 @@ textarea {
   }
 
 }
+.option{
+    background-color: $lightGrayishBlue;
+}
 
-input[type=radio]{
+input[type=radio],
+input[type=checkbox]{
     border: 1px solid $grayishBlue;
     border-radius: 2px ;
     padding: 0.5em;
