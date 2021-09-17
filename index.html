@@ -35,7 +35,7 @@
                 <a href="./index.html" class="active">Home</a>
                 <a href="./donate.html">Donate</a>
                 <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="./faq-contact.html">FAQs and Help</a>
             </div>
 
             <a href="#" class="button header__cta hide-for-mobile">Sign in</a>
@@ -81,7 +81,7 @@
 
     <section class="feature flex flex-ai-c flex-jc-c">
         <div class="container container--px container--pb">
-            <h2 class="feature__h2">Featured Articles</h2>
+            <h2 class="feature__h2">Featured Success Stories</h2>
             <div class="slide">
                 <div class="slide__main">
                     <!--Prev Button-->
@@ -94,16 +94,17 @@
                     <div slide__items>
                         <!--Slide 1-->
                         <div class="slide__item" style="">
-                            <img class="feature__img" src="/img/image-interactive.jpg" alt ="feature article image">
+                            <img class="feature__img" src="/img/nitesh-img.png" alt ="feature article image">
                             <div class="feature__content">
-                                <h2 class="feature__content-subtitle">The leader in interactive VR</h2>
+                                <h2 class="feature__content-subtitle">How Nitesh Beat Cancer with Crowdfunding</h2>
                                 
                                 <p class="feature__content-paragraph">
-                                    Founded in 2011, Loopstudios has been producing world-class virtual reality 
-                                    projects for some of the best companies around the globe. Our award-winning 
-                                    creations have transformed businesses through digital experiences that bind 
-                                    to their brand.<br><br>
-                                    <a href="#" class="button button-2 readmore">Read More... <i class="fa fa-external-link fa-lg"></i></a>
+                                    Nitesh Prajapat is not your average twenty-three year old. This academically brilliant student from Rajasthan boasts off both the IIT 
+                                    and IIM as his alma mater. Hailing from an average income family, Nitesh could 
+                                    not come to terms with the financial burdens attached to a cancer diagnosis. He decided to give crowdfunding a try.
+                                    With an initial goal of Rs. 15,00,000, the fundraiser titled...
+                                    <br><br>
+                                    <a href="https://www.ketto.org/success-stories/helpnitesh" class="button button-2 readmore" target="_blank">Read More... <i class="fa fa-external-link fa-lg"></i></a>
                                 </p>
                                 
                             </div>
@@ -111,32 +112,36 @@
 
                         <!--Slide 2-->
                         <div class="slide__item" style="">
-                            <img class="feature__img" src="/img/image-interactive.jpg" alt ="feature article image">
+                            <img class="feature__img" src="/img/race-img.jpeg" alt ="feature article image">
                             <div class="feature__content">
-                                <h2 class="feature__content-subtitle">The leader in interactive VR</h2>
+                                <h2 class="feature__content-subtitle">Amit and the World's Toughest Cycling Expidition</h2>
                                 
                                 <p class="feature__content-paragraph">
-                                    Founded in 2011, Loopstudios has been producing world-class virtual reality 
-                                    projects for some of the best companies around the globe. Our award-winning 
-                                    creations have transformed businesses through digital experiences that bind 
-                                    to their brand.<br><br>
-                                    <a href="#" class="button button-2 readmore">Read More... <i class="fa fa-external-link fa-lg"></i></a>
+                                    Dr Amit Samarth will be racing at Trans Siberian Extreme. He is the First Indian 
+                                    to race Race Across America (5000 kms) in first attempt in 11 days 21 hrs 11 mins. 
+                                    The total distance for the race is 9100 kms, to be done in 15 stages over a period 
+                                    of 25 days. No Indian has ever participated in Trans Siberian Extreme Race.
+                                    Some of his major achievements are...
+                                    <br><br>
+                                    <a href="https://www.ketto.org/success-stories/amitsamarth" class="button button-2 readmore" target="_blank">Read More... <i class="fa fa-external-link fa-lg"></i></a>
                                 </p>
                             </div>
                         </div>
 
                         <!--Slide 3-->
                         <div class="slide__item" style="">
-                            <img class="feature__img" src="/img/image-interactive.jpg" alt ="feature article image">
+                            <img class="feature__img" src="/img/virat-img.jpg" alt ="feature article image">
                             <div class="feature__content">
-                                <h2 class="feature__content-subtitle">The leader in interactive VR</h2>
+                                <h2 class="feature__content-subtitle">How a 6 Year Old Boy Overcame Cerebral Palsy</h2>
                                 
                                 <p class="feature__content-paragraph">
-                                    Founded in 2011, Loopstudios has been producing world-class virtual reality 
-                                    projects for some of the best companies around the globe. Our award-winning 
-                                    creations have transformed businesses through digital experiences that bind 
-                                    to their brand.<br><br>
-                                    <a href="#" class="button button-2 readmore">Read More... <i class="fa fa-external-link fa-lg"></i></a>
+                                    I have a 5 year old son, Viraat who is diagnosed with Cerebral Palsy since birth. 
+                                    Cerebral Palsy primarily affects body movement and muscle coordination. 
+                                    Currently, Viraat is stable in terms of heath but is 
+                                    facing delay in achieving his milestones. We have done intensive physio therapy, occupational 
+                                    therapy, speech therapy almost everyday in Mumbai...
+                                    <br><br>
+                                    <a href="https://www.ketto.org/success-stories/helpviraat" class="button button-2 readmore" target="_blank">Read More... <i class="fa fa-external-link fa-lg"></i></a>
                                 </p>
                             </div>
                         </div>
@@ -219,7 +224,7 @@
 
                 <!--Item 4-->
                 <div class="fundraiser__item item-buttons">
-                    <a href="#" class="button">Start Fundraiser Now</a>
+                    <a id="modalButton" class="button modal-button" data-toggle="modal" data-target="#Modal">Start Fundraiser Now</a>
                     <br>
                     <a href="#" class="button button-2">Talk with us</a>
                 </div>
@@ -347,7 +352,100 @@
         </div>
     </footer>
 
-    
+    <div id="Modal" class="modal-container fade hidden display-none" role="dialog">
+        <div class="overlay hasFade"></div>
+        <div
+            tabindex="-1"
+            class="modal modal--selection fade"
+            role="dialog"
+            aria-label="Start a Fundraiser"
+            aria-modal="true"
+        >
+            <div class="modal__header">
+                <h2>Start a Fundraiser</h2>
+                <a class=" btn--close-modal" aria-label="close modal">
+                <img src="./img/icon-close-modal.svg" alt="close-button" />
+                </a>
+            </div>
+            
+            <div class="modal__content form__content">
+                <form>
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="name">Patient's Name</label>
+                        <input type="text" id="name"  
+                            placeholder="Enter Patient's Name"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Patients Name'" required>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="amount">How much do you want to raise?</label>
+                        <input type="number" min="2000" id="amount" 
+                            placeholder="Enter the Amount"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter the Amount'" required>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="reltion">The patient is my...</label>
+                        <input type="text" id="name" 
+                            placeholder="Enter Your Relation with the Patient"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Your Relation with the Patient'" required>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="choosefund">Reason for Raising Money</label>
+                        <select id="choosefund" place required>
+                            <option disabled selected value="">Select your Category</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="email">Your Email Address</label>
+                        <input type="email" id="email" 
+                            placeholder="Enter Your Email Address"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Your Email Address'" required>
+                    </div>
+
+                    <div class="form__item form__itemlast">
+                        <div class="form__buttons">
+                            <a class="button selection-submit" type="submit">Submit</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div
+            tabindex="-1"
+            class="modal modal--success fade section"
+            role="dialog"
+            aria-label="fundraiser submission confirmation"
+            aria-modal="true"
+        >
+            <img src="./img/icon-check.svg" alt="" />
+            <h2 class="heading heading--secondary heading--modal">
+                Thank you for Starting a Fundraiser!
+            </h2>
+            <p class="paragraph paragraph--modal">
+                We will soon send you an email to you to set up other 
+                necessities and start your fundraiser as soon as possible. 
+                If you have any queries please feel free to contact us or 
+                check the FAQ page from the header.
+            </p>
+            <button class="button close-modal" aria-label="close modal">
+                Got it!
+            </button>
+        </div>
+    </div>
+
+
 
     <script src="app/js/script.js"></script>
 

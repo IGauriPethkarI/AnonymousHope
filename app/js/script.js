@@ -1,5 +1,4 @@
-
-
+//Header
 const btnHamburger = document.querySelector('#btnHamburger');
 const body = document.querySelector('body');
 const header = document.querySelector('.header');
@@ -30,6 +29,8 @@ btnHamburger.addEventListener('click', function(){
     
 });
 
+
+//featured articles slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -55,3 +56,55 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+//modal functioning
+const modalshow = document.querySelector('#modalButton');
+const modal = document.querySelector('.modal-container');
+const selctionModal = document.querySelector('.modal--selection');
+const successModal = document.querySelector('.modal--success');
+const selectionSubmit = document.querySelector('.selection-submit');
+
+//close button
+const closeModalBtn = document.querySelector('.btn--close-modal');
+const closeModal = document.querySelector('.close-modal');
+
+modalshow.addEventListener('click', function(){
+    modal.style.display = "block";
+    successModal.style.display = 'none';
+    body.style.overflow  = "hidden";          
+});
+
+selectionSubmit.addEventListener('click', function(){
+    successModal.style.display = "block";
+    selctionModal.style.display = "none";
+    body.style.overflow  = "hidden";
+});
+
+//close modal
+closeModalBtn.addEventListener('click', function(){
+    modal.style.display = "none";
+    body.style.overflow  = "visible";  
+});
+
+closeModal.addEventListener('click', function(){
+    modal.style.display = "none";
+    body.style.overflow  = "visible";  
+});
+
+//--------faq toggle-------//
+var items = document.getElementsByClassName(".accordion-a");
+var i;
+
+function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+  
+    for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+    }
+    
+    if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
+}
+
+items.forEach(item => item.addEventListener("click", toggleAccordion));
