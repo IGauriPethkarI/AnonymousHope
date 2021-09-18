@@ -92,9 +92,13 @@
         }
         + .accordion-content {
             opacity: 1;
-            max-height: 9em;
+            max-height: 20em;
             transition: all 200ms linear;
             will-change: opacity, max-height;
+
+            @include breakpoint-up(medium){
+                max-height: 10em;
+            }
         }
     }
     .accordion-content {

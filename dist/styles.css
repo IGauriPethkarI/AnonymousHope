@@ -1405,9 +1405,14 @@ input[type=checkbox]:not(:checked) {
 }
 .accordion a[aria-expanded=true] + .accordion-content {
   opacity: 1;
-  max-height: 9em;
+  max-height: 20em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
+}
+@media (min-width: 45em) {
+  .accordion a[aria-expanded=true] + .accordion-content {
+    max-height: 10em;
+  }
 }
 .accordion .accordion-content {
   opacity: 0;
