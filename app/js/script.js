@@ -66,7 +66,7 @@ const selectionSubmit = document.querySelector('.selection-submit');
 
 //close button
 const closeModalBtn = document.querySelector('.btn--close-modal');
-const closeModal = document.querySelector('.close-modal');
+const finalSubmit = document.querySelector('.close-modal');
 
 modalshow.addEventListener('click', function(){
     modal.style.display = "block";
@@ -82,29 +82,13 @@ selectionSubmit.addEventListener('click', function(){
 
 //close modal
 closeModalBtn.addEventListener('click', function(){
-    modal.style.display = "none";
+    modal.classList.add('fadeOut');
     body.style.overflow  = "visible";  
+    modal.style.display = "none";
 });
 
-closeModal.addEventListener('click', function(){
-    modal.style.display = "none";
-    body.style.overflow  = "visible";  
+finalSubmit.addEventListener('click', function(){
+    body.style.overflow  = "visible";
+    modal.classList.add('fadeOut'); 
+    modal.style.display = "none"; 
 });
-
-//--------faq toggle-------//
-var items = document.getElementsByClassName(".accordion-a");
-var i;
-
-function toggleAccordion() {
-    const itemToggle = this.getAttribute('aria-expanded');
-  
-    for (i = 0; i < items.length; i++) {
-        items[i].setAttribute('aria-expanded', 'false');
-    }
-    
-    if (itemToggle == 'false') {
-        this.setAttribute('aria-expanded', 'true');
-    }
-}
-
-items.forEach(item => item.addEventListener("click", toggleAccordion));

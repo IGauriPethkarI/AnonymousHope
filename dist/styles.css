@@ -71,6 +71,32 @@
           animation: fade-out 200ms ease-in-out forwards;
 }
 
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(3.75rem);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(3.75rem);
+  }
+}
+.fadeOut {
+  -webkit-animation: fadeOut 1.6s ease;
+          animation: fadeOut 1.6s ease;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -1294,6 +1320,13 @@ input[type=checkbox]:not(:checked) {
   margin-top: -2.5rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
 .faq {
   background-color: #f3f4f6;
 }
@@ -1382,4 +1415,8 @@ input[type=checkbox]:not(:checked) {
   overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
+}
+
+.inline-links {
+  all: initial;
 }/*# sourceMappingURL=styles.css.map */

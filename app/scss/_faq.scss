@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    &::before, &::after {
+        box-sizing: border-box;
+    }
+}
+
 .faq{
     background-color: $lightGrayishBlue;
     &-container{
@@ -98,4 +105,8 @@
         will-change: opacity, max-height;
         
     }
+}
+
+.inline-links{
+    all: initial;
 }

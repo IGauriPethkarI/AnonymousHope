@@ -38,3 +38,18 @@
   .fade-out {
       animation: fade-out 200ms ease-in-out forwards;
 }
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(3.75rem);
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 1.6s ease;
+}
