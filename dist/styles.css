@@ -491,6 +491,41 @@ button:hover::before, button:focus::before, .button:hover::before, .button:focus
   padding-bottom: 3.57rem;
 }
 
+@media (min-width: 45em) {
+  .help {
+    background-position: center right;
+    background-image: url("");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, transparent, white 55%), url("/img/desktop-background-top-faq.png");
+  }
+}
+.help__img {
+  background-image: none;
+  background-image: linear-gradient(to bottom, transparent, white 95%), url("/img/mobile-background-top-faq.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+@media (min-width: ) {
+  .help__img {
+    min-height: 25rem;
+    background-position: center 70%;
+  }
+}
+@media (min-width: 45em) {
+  .help__img {
+    flex: 3;
+    order: 2;
+    height: 20rem;
+    background-image: none;
+  }
+}
+.help__button {
+  color: #6a6a6c;
+}
+
 .feature {
   width: 86%;
   max-width: 1114px;
