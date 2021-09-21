@@ -387,14 +387,6 @@
 
                     <div class="form__item">
                         <label class="form__inputtitle" for="reltion">The patient is my...</label>
-                        <input type="text" id="name" 
-                            placeholder="Enter Your Relation with the Patient"
-                            onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter Your Relation with the Patient'" required>
-                    </div>
-
-                    <div class="form__item">
-                        <label class="form__inputtitle" for="choosefund">Reason for Raising Money</label>
                         <select id="choosefund" place required>
                             <option disabled selected value="">Select your Category</option>
                             <option value="volvo">Parent</option>
@@ -404,6 +396,14 @@
                             <option value="volvo">Friend</option>
                             <option value="volvo">Student</option>
                         </select>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__inputtitle" for="choosefund">Reason for Raising Money</label>
+                        <input type="text" id="name" 
+                            placeholder="Enter the Reason"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter the Reason'" required>
                     </div>
 
                     <div class="form__item">
